@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lee Las historias de TAU: 33, de Moisès Trullàs Parrot.">
+  <title>Leer Las historias de TAU: 33 · Moisès Trullàs Parrot</title>
+  <link rel="stylesheet" href="assets/reader.css?v=hover-separators-v4">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <header class="reader-top">
+    <a class="book-home" href="el-dios-proximo-web.html" aria-label="Volver a la web de Las historias de TAU: 33">
+      <span class="tau">τ</span>
+      <span><b>Las historias de TAU: 33</b><small>Libro I</small></span>
+    </a>
+    <div class="reader-actions">
+      <button id="tocToggle" class="action action-toc" type="button" aria-controls="toc" aria-expanded="false">Capítulos</button>
+      <button id="fontDown" class="action icon-action" type="button" aria-label="Reducir el tamaño del texto">A−</button>
+      <button id="fontUp" class="action icon-action" type="button" aria-label="Aumentar el tamaño del texto">A+</button>
+      <button id="themeToggle" class="action icon-action" type="button" aria-label="Cambiar el tema de lectura">◐</button>
+    </div>
+  </header>
+
+  <aside class="toc" id="toc" aria-label="Índice de capítulos">
+    <div class="toc-head">
+      <span>Índice</span>
+      <button id="tocClose" type="button" aria-label="Cerrar el índice">×</button>
+    </div>
+    <nav id="tocNav"></nav>
+  </aside>
+  <button class="toc-scrim" id="tocScrim" type="button" aria-label="Cerrar el índice" tabindex="-1"></button>
+
+  <nav class="chapter-quick-nav" aria-label="Navegación rápida entre capítulos">
+    <button class="quick-chapter-button previous" id="quickPreviousChapter" type="button">
+          <span aria-hidden="true">&#9664;</span><b>Prev Chapter</b>
+    </button>
+    <button class="quick-chapter-button next" id="quickNextChapter" type="button">
+          <b>Next Chapter</b><span aria-hidden="true">&#9654;</span>
+    </button>
+  </nav>
+
+  <main id="readerMain">
+    <section class="chapter" id="chapterView" aria-live="polite">
+      <figure class="chapter-art" id="chapterArt">
+        <img id="chapterImage" alt="" decoding="async">
+        <figcaption class="chapter-heading">
+          <span class="part-label" id="partLabel"></span>
+          <span class="chapter-number" id="chapterNumber"></span>
+          <h1 id="chapterTitle"></h1>
+        </figcaption>
+      </figure>
+
+      <article class="chapter-text" id="chapterText"></article>
+
+      <nav class="chapter-pagination" aria-label="Navegación entre capítulos">
+        <a class="chapter-link previous" id="previousChapter" href="#">
+          <span>Anterior</span><b></b>
+        </a>
+        <a class="chapter-link next" id="nextChapter" href="#">
+          <span>Siguiente</span><b></b>
+        </a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="reader-footer">
+    <span class="tau">τ</span> Las historias de TAU: 33 · © 2026 Moisès Trullàs Parrot
+  </footer>
+
+  <noscript>Esta edición web necesita JavaScript para mostrar y navegar los capítulos.</noscript>
+  <script src="assets/novel-data.js?v=docx-20260812-192738"></script>
+  <script src="assets/chapter-art.js"></script>
+  <script src="assets/reader.js?v=docx-20260812-192738"></script>
+</body>
+</html>

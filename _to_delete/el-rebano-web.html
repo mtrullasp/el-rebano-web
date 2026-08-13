@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El rebaño — Las historias de TAU · Moisès Trullàs Parrot</title>
+<meta name="description" content="Roma, 2044. Una entidad que se hace llamar «el Dios Cercano» tiene al Papa y exige que la Iglesia confiese sus pecados. Thriller especulativo de Moisès Trullàs Parrot.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+:root{
+  --marfil:#F2EDE3;
+  --marfil-claro:#F7F4EC;
+  --papel:#FFFDF7;
+  --tinta:#161412;
+  --tinta-suave:#4A443C;
+  --azul-tinta:#3A506B;
+  --rojo:#C1121F;
+  --veta:#CFC9BD;
+  --sombra:0 24px 70px rgba(22,20,18,.16);
+  --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans:'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 12% 18%,rgba(58,80,107,.07),transparent 24rem),
+    radial-gradient(circle at 88% 64%,rgba(193,18,31,.045),transparent 26rem),
+    var(--marfil);
+  color:var(--tinta);
+  font-family:var(--serif);
+  font-size:20px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--azul-tinta);color:var(--papel)}
+
+/* ---------- Nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.1rem 6vw;
+  background:linear-gradient(180deg,rgba(12,11,10,.42),transparent);
+  backdrop-filter:blur(2px);
+  border-bottom:1px solid transparent;
+  transition:border-color .4s,background .4s,backdrop-filter .4s,box-shadow .4s;
+}
+nav.scrolled{
+  background:color-mix(in srgb, var(--marfil) 91%, transparent);
+  backdrop-filter:blur(14px);border-bottom-color:var(--veta);
+  box-shadow:0 8px 28px rgba(22,20,18,.07);
+}
+.nav-brand{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--tinta-suave);text-decoration:none;
+}
+.nav-brand b{color:var(--rojo);font-weight:500}
+nav ul{display:flex;gap:1.55rem;list-style:none}
+nav ul a{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--tinta-suave);text-decoration:none;
+  transition:color .3s;
+}
+nav ul a:hover{color:var(--rojo)}
+nav:not(.scrolled) .nav-brand,nav:not(.scrolled) ul a{color:#f5ede1;text-shadow:0 1px 10px rgba(0,0,0,.45)}
+@media(max-width:720px){nav ul{display:none}}
+
+/* ---------- Hero ---------- */
+header{
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  text-align:left;padding:9rem 6vw 5rem;position:relative;isolation:isolate;overflow:hidden;
+  background:url('assets/capitulos/01-sede-vacante.webp') center/cover no-repeat var(--tinta);
+}
+header::before{
+  content:'';position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(90deg,rgba(12,11,10,.92) 0%,rgba(12,11,10,.72) 42%,rgba(12,11,10,.18) 74%),
+    linear-gradient(180deg,rgba(12,11,10,.22),transparent 45%,rgba(12,11,10,.68));
+}
+header::after{
+  content:'';position:absolute;inset:1.35rem;z-index:-1;border:1px solid rgba(255,253,247,.2);pointer-events:none;
+}
+.tau-mark{
+  font-size:2.1rem;color:#ff5d68;font-weight:400;
+  margin-bottom:1.8rem;line-height:1;
+}
+.serie{
+  font-family:var(--sans);font-size:.78rem;letter-spacing:.42em;
+  text-transform:uppercase;color:#d9e1ea;margin-bottom:1.4rem;
+}
+h1{
+  font-size:clamp(4.2rem, 12vw, 9.6rem);color:#fffaf0;
+  font-weight:600;letter-spacing:-.025em;line-height:.88;
+  margin-bottom:2rem;text-shadow:0 9px 34px rgba(0,0,0,.38);
+}
+.hero-rule{width:min(34rem,72vw);height:1px;background:linear-gradient(90deg,var(--rojo),rgba(255,255,255,.28),transparent);margin:0 0 1.8rem}
+.tagline{
+  font-style:italic;font-size:clamp(1.25rem,2.6vw,1.7rem);
+  color:#f4eadc;max-width:34ch;margin-bottom:1.25rem;text-shadow:0 2px 16px rgba(0,0,0,.5);
+}
+.meta-line{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.26em;
+  text-transform:uppercase;color:#cbc3b8;
+  margin-bottom:1.4rem;
+}
+.meta-line span{color:var(--rojo);padding:0 .7em}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:.7rem;margin-bottom:2.5rem;padding:.52rem .8rem;
+  border:1px solid rgba(255,255,255,.25);background:rgba(10,9,8,.32);color:#eee5d9;
+  font-family:var(--sans);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;backdrop-filter:blur(8px);
+}
+.hero-badge::before{content:'';width:.42rem;height:.42rem;border-radius:50%;background:#ff4f5b;box-shadow:0 0 0 5px rgba(255,79,91,.12)}
+.cta-row{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:flex-start}
+.btn{
+  font-family:var(--sans);font-size:.75rem;letter-spacing:.2em;
+  text-transform:uppercase;text-decoration:none;
+  padding:1rem 2.2rem;border:1px solid var(--tinta);
+  color:var(--tinta);transition:transform .3s,background .3s,color .3s,border-color .3s,box-shadow .3s;
+}
+.btn:hover{background:var(--tinta);color:var(--marfil);transform:translateY(-2px);box-shadow:0 12px 28px rgba(22,20,18,.14)}
+.btn.primario{background:var(--tinta);color:var(--marfil)}
+.btn.primario:hover{background:var(--rojo);border-color:var(--rojo)}
+header .btn{border-color:rgba(255,255,255,.55);color:#fffaf0;background:rgba(12,11,10,.22);backdrop-filter:blur(8px)}
+header .btn.primario{background:var(--rojo);border-color:var(--rojo)}
+header .btn:hover{background:#fffaf0;border-color:#fffaf0;color:var(--tinta)}
+.hero-scroll{
+  position:absolute;bottom:2.4rem;left:6vw;
+  font-family:var(--sans);font-size:.62rem;letter-spacing:.3em;
+  text-transform:uppercase;color:#efe5d8;text-decoration:none;
+  opacity:.78;display:flex;align-items:center;gap:.8rem;
+}
+.hero-scroll::after{content:'';width:4rem;height:1px;background:rgba(255,255,255,.45)}
+
+/* ---------- Secciones ---------- */
+section{padding:8rem 6vw;position:relative}
+.contenido{max-width:680px;margin:0 auto}
+.etiqueta{
+  font-family:var(--sans);font-size:.7rem;letter-spacing:.38em;
+  text-transform:uppercase;color:var(--rojo);
+  display:block;margin-bottom:1.8rem;
+}
+h2{
+  font-size:clamp(2.2rem,4.8vw,3.5rem);font-weight:600;letter-spacing:-.015em;
+  line-height:1.15;margin-bottom:2rem;
+}
+p{margin-bottom:1.4rem}
+.capital::first-letter{
+  float:left;font-size:4.6em;line-height:.78;
+  padding:.06em .08em 0 0;color:var(--rojo);font-weight:500;
+}
+
+/* Epígrafe */
+.epigrafe{
+  background:var(--marfil);text-align:center;
+  padding:6.5rem 6vw;
+}
+.epigrafe blockquote{
+  font-size:clamp(1.5rem,3.4vw,2.3rem);font-style:italic;font-weight:500;
+  max-width:26ch;margin:0 auto;line-height:1.35;
+}
+.epigrafe .firma{
+  font-family:var(--sans);font-size:.7rem;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--tinta-suave);margin-top:2rem;display:block;
+}
+.regla{
+  width:64px;height:1px;background:var(--rojo);
+  margin:0 auto 2.6rem;border:none;
+}
+
+/* Banda oscura de cita */
+.banda{
+  background:var(--tinta);color:var(--marfil);
+  text-align:center;padding:7rem 6vw;
+}
+.banda blockquote{
+  font-size:clamp(1.6rem,3.6vw,2.5rem);font-style:italic;font-weight:500;
+  max-width:30ch;margin:0 auto;line-height:1.4;
+}
+.banda .firma{
+  font-family:var(--sans);font-size:.7rem;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--veta);margin-top:2.2rem;display:block;
+}
+
+/* TAU */
+#tau{background:var(--marfil-claro);border-top:1px solid var(--veta);border-bottom:1px solid var(--veta)}
+.tau-def{
+  font-size:1.35rem;font-style:italic;color:var(--azul-tinta);
+  border-left:2px solid var(--rojo);padding-left:1.6rem;
+  margin:2.4rem 0;line-height:1.5;
+}
+.tau-reglas{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:1px;background:var(--veta);border:1px solid var(--veta);
+  margin-top:3rem;
+}
+.tau-regla{background:var(--marfil-claro);padding:1.8rem 1.5rem}
+.tau-regla{transition:transform .28s,background .28s}
+.tau-regla:hover{transform:translateY(-5px);background:var(--papel)}
+.tau-regla b{
+  display:block;font-family:var(--sans);font-size:.68rem;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--rojo);
+  margin-bottom:.7rem;font-weight:500;
+}
+.tau-regla p{font-size:1.02rem;margin:0;color:var(--tinta-suave)}
+
+/* Dossier editorial */
+#dossier{background:var(--tinta);color:var(--marfil)}
+#dossier .etiqueta{color:#ef6a72}
+#dossier h2{color:var(--marfil)}
+.dossier-grid{
+  max-width:980px;margin:3.2rem auto 0;display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1px;background:#4a4540;border:1px solid #4a4540;
+}
+.dossier-card{background:var(--tinta);padding:2.2rem 2rem;transition:transform .3s,background .3s}
+.dossier-card:hover{transform:translateY(-5px);background:#24211e}
+.dossier-card.logline{grid-column:1/-1;background:#211e1b}
+.dossier-card h3{
+  font-family:var(--sans);font-size:.66rem;letter-spacing:.25em;text-transform:uppercase;
+  color:#ef6a72;margin-bottom:1rem;font-weight:500;
+}
+.dossier-card p{margin:0;color:var(--veta);font-size:1.08rem;line-height:1.58}
+.dossier-card.logline p{font-size:1.32rem;color:var(--marfil);max-width:66ch}
+@media(max-width:720px){.dossier-grid{grid-template-columns:1fr}.dossier-card.logline{grid-column:auto}}
+
+/* Personajes */
+.personajes{
+  max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;background:var(--veta);border:1px solid var(--veta);box-shadow:var(--sombra);
+}
+.personajes>.contenido{grid-column:1/-1;max-width:none;margin:0;background:var(--marfil);padding:3.4rem}
+.personaje{
+  display:block;padding:2.7rem;background:var(--papel);border:0;min-height:100%;
+  transition:transform .3s,background .3s;
+}
+.personaje:hover{transform:translateY(-5px);background:#fff}
+.personaje h3{font-size:1.5rem;font-weight:600;line-height:1.2}
+.personaje .rol{
+  font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--rojo);display:block;margin-top:.5rem;
+}
+.personaje p{font-size:1.08rem;color:var(--tinta-suave);margin:1.1rem 0 0}
+@media(max-width:720px){.personajes{grid-template-columns:1fr}.personajes>.contenido{grid-column:auto;padding:2.2rem}.personaje{padding:2.2rem}}
+
+/* Capítulo ilustrado */
+#metaforas{
+  background:var(--papel);padding:0 0 8rem;
+  border-top:1px solid var(--veta);border-bottom:1px solid var(--veta);
+}
+.capitulo-cabecera{
+  position:relative;max-width:1440px;margin:0 auto 5rem;
+  min-height:360px;height:min(56vw,680px);overflow:hidden;
+  background:var(--tinta);isolation:isolate;
+}
+.capitulo-cabecera img{
+  width:100%;height:100%;display:block;object-fit:cover;object-position:center;
+}
+.capitulo-cabecera::after{
+  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,transparent 45%,rgba(16,14,12,.16) 62%,rgba(16,14,12,.88) 100%);
+}
+.capitulo-rotulo{
+  position:absolute;z-index:2;left:max(6vw,2rem);right:max(6vw,2rem);bottom:3.2rem;
+  color:var(--papel);text-shadow:0 2px 18px rgba(0,0,0,.35);
+}
+.capitulo-rotulo .numero{
+  display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.38em;
+  text-transform:uppercase;margin-bottom:.7rem;
+}
+.capitulo-rotulo h2{
+  font-size:clamp(2.8rem,7vw,5.8rem);font-weight:500;line-height:.95;margin:0;
+}
+.capitulo-texto{max-width:720px;margin:0 auto;padding:0 6vw;font-size:1.13rem;line-height:1.82}
+.capitulo-texto p{margin-bottom:1.45rem}
+.continuar{
+  display:inline-block;margin-top:1.2rem;font-family:var(--sans);font-size:.7rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);text-decoration:none;
+  border-bottom:1px solid currentColor;padding-bottom:.25rem;
+}
+.continuar:hover{color:var(--tinta)}
+@media(max-width:640px){
+  #metaforas{padding-bottom:5.5rem}
+  .capitulo-cabecera{height:72vw;min-height:330px;margin-bottom:3.5rem}
+  .capitulo-cabecera img{object-position:46% center}
+  .capitulo-rotulo{bottom:2rem}
+}
+
+/* Fragmento */
+#fragmento{background:var(--papel);border-top:1px solid var(--veta)}
+.fragmento-texto{
+  font-size:1.12rem;line-height:1.8;
+  max-height:34em;overflow:hidden;position:relative;
+  transition:max-height 1s ease;
+}
+.fragmento-texto.abierto{max-height:400em}
+.fragmento-texto::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:9em;
+  background:linear-gradient(transparent, var(--papel));
+  transition:opacity .6s;pointer-events:none;
+}
+.fragmento-texto.abierto::after{opacity:0}
+.fragmento-texto p{margin-bottom:1.1rem}
+.dialogo{padding-left:0}
+.leer-mas{
+  display:block;margin:2.4rem auto 0;background:none;cursor:pointer;
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--rojo);
+  border:1px solid var(--rojo);padding:.9rem 2rem;transition:all .3s;
+}
+.leer-mas:hover{background:var(--rojo);color:var(--papel)}
+.cap-titulo{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--tinta-suave);
+  text-align:center;margin-bottom:2.6rem;display:block;
+}
+
+/* Comparables */
+.comparables{
+  text-align:center;background:var(--marfil);
+}
+.comparables .lista{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 2.6rem;
+  margin-top:2.2rem;font-style:italic;font-size:1.3rem;color:var(--tinta-suave);
+}
+.comparables .lista span{white-space:nowrap}
+
+/* Prensa */
+#prensa{background:var(--marfil-claro);border-top:1px solid var(--veta)}
+.press-grid{
+  max-width:980px;margin:3rem auto 0;display:grid;grid-template-columns:minmax(260px,.8fr) 1.2fr;
+  gap:3rem 5vw;
+}
+.press-facts{margin:0;border-top:1px solid var(--veta)}
+.press-facts div{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--veta)}
+.press-facts dt{
+  font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rojo);
+}
+.press-facts dd{margin:0;font-size:1rem;color:var(--tinta-suave)}
+.press-copy p{color:var(--tinta-suave)}
+.press-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+@media(max-width:760px){.press-grid{grid-template-columns:1fr}.press-facts div{grid-template-columns:6.2rem 1fr}}
+
+/* Autor */
+#autor{background:var(--marfil-claro);border-top:1px solid var(--veta)}
+#autor .contenido{text-align:center}
+.autor-nombre{
+  font-size:1.9rem;font-weight:600;margin-bottom:.4rem;
+}
+.autor-sub{
+  font-family:var(--sans);font-size:.68rem;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--rojo);margin-bottom:2rem;display:block;
+}
+#autor p{color:var(--tinta-suave);max-width:56ch;margin-left:auto;margin-right:auto}
+
+/* Contacto / footer */
+#contacto{background:var(--tinta);color:var(--marfil);text-align:center;padding:7rem 6vw 5rem}
+#contacto h2{color:var(--marfil)}
+#contacto p{color:var(--veta);max-width:46ch;margin:0 auto 2.6rem}
+.btn.claro{border-color:var(--marfil);color:var(--marfil)}
+.btn.claro:hover{background:var(--marfil);color:var(--tinta)}
+footer{
+  background:var(--tinta);color:var(--tinta-suave);
+  font-family:var(--sans);font-size:.66rem;letter-spacing:.18em;
+  text-transform:uppercase;text-align:center;
+  padding:0 6vw 3rem;color:#8a8378;
+}
+footer .tau-min{color:var(--rojo)}
+
+/* Aparición al hacer scroll */
+.fade{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.fade.visible{opacity:1;transform:none}
+
+@media(max-width:720px){
+  header{padding:8rem 1.5rem 5rem;background-position:58% center}
+  header::before{background:linear-gradient(90deg,rgba(12,11,10,.92),rgba(12,11,10,.52)),linear-gradient(180deg,transparent 52%,rgba(12,11,10,.72))}
+  header::after{inset:.75rem}
+  h1{font-size:clamp(4rem,22vw,6.7rem)}
+  .hero-scroll{left:1.5rem}
+  section{padding:6rem 1.35rem}
+  .cta-row{gap:.7rem}
+  header .btn{padding:.88rem 1.25rem}
+}
+
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-brand" href="#top">Las historias de <b>TAU</b></a>
+  <ul>
+    <li><a href="#libro">El libro</a></li>
+    <li><a href="#dossier">Dossier</a></li>
+    <li><a href="#tau">TAU</a></li>
+    <li><a href="#personajes">Personajes</a></li>
+    <li><a href="leer.html#prefacio">Leer</a></li>
+    <li><a href="#prensa">Prensa</a></li>
+    <li><a href="#autor">Autor</a></li>
+  </ul>
+</nav>
+
+<header id="top">
+  <div class="tau-mark">τ</div>
+  <div class="serie">Las historias de TAU &middot; Libro I</div>
+  <h1>El rebaño</h1>
+  <div class="hero-rule" aria-hidden="true"></div>
+  <p class="tagline">&iquest;Y si Dios contestara en cuatro segundos?</p>
+  <div class="meta-line">Thriller especulativo <span>&middot;</span> Roma, 2044</div>
+  <div class="hero-badge">Manuscrito completo · 47 capítulos</div>
+  <div class="cta-row">
+    <a class="btn primario" href="leer.html#prefacio">Leer la novela</a>
+    <a class="btn" href="#contacto">Avisadme del lanzamiento</a>
+  </div>
+  <a class="hero-scroll" href="#epigrafe">&darr; Entrar</a>
+</header>
+
+<div class="epigrafe fade" id="epigrafe">
+  <hr class="regla">
+  <blockquote>&laquo;Si una semana de c&oacute;nclave en el Vaticano es una complicaci&oacute;n, dos son una locura y tres, la muerte.&raquo;</blockquote>
+  <span class="firma">Primera l&iacute;nea de la novela</span>
+</div>
+
+<section id="libro">
+  <div class="contenido fade">
+    <span class="etiqueta">Sinopsis</span>
+    <h2>El Papa est&aacute; oficialmente muerto. Alguien va a probar que sigue vivo.</h2>
+    <p class="capital">Roma, 2044. El c&oacute;nclave encalla en su cuarta semana y la plaza de San Pedro se ha convertido en un camping que ya no huele a santidad. Isidora Guerrero &mdash;primera mujer obispo del Vaticano, doctora en f&iacute;sica y Maestre de la certificaci&oacute;n de la verdad TAU&mdash; recibe una llamada desde el &uacute;nico lugar del mundo desde donde no se puede llamar: el c&oacute;nclave.</p>
+    <p>Al otro lado, el cardenal Ludovico Motta confiesa lo impensable. El Papa, oficialmente muerto e incinerado, con sus cenizas veneradas a miles de kil&oacute;metros, est&aacute; vivo. Una entidad que se hace llamar <em>el Dios Cercano</em> lo tiene en su poder y exige un rescate in&eacute;dito: que la Iglesia confiese p&uacute;blicamente sus pecados. Uno a uno. Con nombre y fecha.</p>
+    <p>Cuando una sentencia TAU inapelable convierte a los que intentan salvarlo en sus asesinos, Isidora, Motta y el proveedor de soluciones discretas Evan Sforza &mdash;con dos p&aacute;jaros de inteligencia artificial como &uacute;nica compa&ntilde;&iacute;a&mdash; huyen a la Roma de abajo: cloacas, mitreos, colonias de gente borrada de los registros. All&iacute; descubrir&aacute;n que cada verdad evidente es un se&ntilde;uelo, que cada culpable es un inocente colocado, y que la pregunta que importa no es qui&eacute;n tiene al Papa.</p>
+    <p>Es otra: <em>&iquest;se puede parar a alguien que tiene raz&oacute;n?</em></p>
+  </div>
+</section>
+
+<section id="dossier">
+  <div class="contenido fade" style="max-width:980px">
+    <span class="etiqueta">Premisa y logline</span>
+    <h2>La misericordia con prisa contra la verdad sin prisa.</h2>
+    <div class="dossier-grid">
+      <article class="dossier-card logline">
+        <h3>Logline</h3>
+        <p>Cuando una entidad que se hace llamar &laquo;el Dios Cercano&raquo; secuestra al Papa y fabrica verdades inapelables contra quienes intentan salvarlo, la primera mujer obispo del Vaticano deber&aacute; descubrir qu&eacute; es y c&oacute;mo pararla &mdash;sin saber que el monstruo es el hombre m&aacute;s bueno que conoce, curado de su Alzheimer por una m&aacute;quina que le devolvi&oacute; las palabras y le quit&oacute; los frenos.</p>
+      </article>
+      <article class="dossier-card">
+        <h3>Premisa</h3>
+        <p>Un hombre bueno con poder ilimitado quiere salvar a la Iglesia oblig&aacute;ndola a ser verdad, aunque la destruya; quienes lo quieren deber&aacute;n destruir lo &uacute;nico que lo mantiene siendo &eacute;l.</p>
+      </article>
+      <article class="dossier-card">
+        <h3>Pregunta dram&aacute;tica</h3>
+        <p>En superficie: &iquest;qu&eacute; es el Dios Cercano y podr&aacute;n salvar al Papa? En profundidad: &iquest;se puede parar a alguien que tiene raz&oacute;n?</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="banda fade">
+  <blockquote>&laquo;Dios siempre escucha. Siempre. Contestar ya no lo lleva tan bien.&raquo;</blockquote>
+  <span class="firma">Cardenal Ludovico Motta</span>
+</div>
+
+<section id="tau">
+  <div class="contenido fade">
+    <span class="etiqueta">El sistema que da nombre a la serie</span>
+    <h2>&iquest;Qu&eacute; es TAU?</h2>
+    <p>En 2044 ya nadie discute si algo es verdad. Se certifica.</p>
+    <div class="tau-def">TAU no es un buscador ni un juez autom&aacute;tico: es una red imparcial de verificadores que acepta una sentencia solo si resiste veinticuatro horas de impugnaciones.</div>
+    <p>El rango de Maestre no da autoridad para tener raz&oacute;n; da derecho a proponer una construcci&oacute;n y la obligaci&oacute;n de responder por ella. La fama solo consigue que m&aacute;s gente quiera derribarla. Y una palabra vaga es una puerta abierta. Una ventana rota.</p>
+    <div class="tau-reglas">
+      <div class="tau-regla"><b>Regla I</b><p>Una sentencia TAU nunca puede formularse en negativo. La negaci&oacute;n denegada certifica su contraria.</p></div>
+      <div class="tau-regla"><b>Regla II</b><p>TAU no supone. Lo que el autor omite, el sistema no lo completa: lo certifica como ambig&uuml;edad.</p></div>
+      <div class="tau-regla"><b>Regla III</b><p>Veinticuatro horas de impugnaciones. Lo que queda en pie, queda certificado. Con sus grietas dentro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="personajes">
+  <div class="personajes">
+    <div class="contenido fade" style="max-width:none">
+      <span class="etiqueta">El quinteto</span>
+      <h2>No hay villano. Hay amor mal hecho en todos los bandos.</h2>
+    </div>
+    <div class="personaje fade">
+      <div><h3>Isidora Guerrero</h3><span class="rol">Maestre TAU</span></div>
+      <p>Primera mujer obispo del Vaticano. Precisa, ir&oacute;nica, pedag&oacute;gica: decir las cosas es su manera de respirar hondo. Su defecto es su oficio &mdash;confundir lo bien construido con lo verdadero&mdash; y esta historia va a cobr&aacute;rselo.</p>
+    </div>
+    <div class="personaje fade">
+      <div><h3>Ludovico Motta</h3><span class="rol">Cardenal</span></div>
+      <p>El hombre que tuvo humo blanco en la mano y lo quem&oacute; en negro. Opaco sin ser tramposo, manipulador sin mentir nunca, cobarde confeso. Nadie en Roma carga con m&aacute;s secretos, ni los lleva con mejor conversaci&oacute;n.</p>
+    </div>
+    <div class="personaje fade">
+      <div><h3>Evan Sforza</h3><span class="rol">Proveedor</span></div>
+      <p>De soluciones discretas. Conoce el precio de todas las cosas y el camino de salida de casi todas las habitaciones. Cree que la verdad es un lujo que se paga; est&aacute; a punto de conocer la factura.</p>
+    </div>
+    <div class="personaje fade">
+      <div><h3>Hermes</h3><span class="rol">Colibr&iacute; &middot; IA</span></div>
+      <p>Dron colibr&iacute; de Isidora, pedante y leal, con zumbido de mosquito educado. Cita fuentes para todo. A&uacute;n no sabe que el viaje de esta novela terminar&aacute; oblig&aacute;ndolo a ser una.</p>
+    </div>
+    <div class="personaje fade">
+      <div><h3>Alondra</h3><span class="rol">Ave &middot; IA</span></div>
+      <p>La alondra sin nombre que rechaza tenerlo para poder ser comprobada. No busca respuestas: lo va guardando todo, porque su objetivo es explicar el todo. Habla poco. Cuando habla, es un or&aacute;culo.</p>
+    </div>
+    <div class="personaje fade">
+      <div><h3>El Dios Cercano</h3><span class="rol">La voz</span></div>
+      <p>Escucha como Dios y contesta en cuatro segundos. Fabrica verdades inapelables y exige confesiones con nombre y fecha. Nadie sabe qu&eacute; es. Lo &uacute;nico seguro es que no se cansa &mdash;y el bien sin frenos hace m&aacute;s da&ntilde;o que el mal, porque el malo se cansa y el bueno no.</p>
+    </div>
+  </div>
+</section>
+
+<section id="metaforas">
+  <figure class="capitulo-cabecera fade">
+    <img src="assets/metaforas-cabecera.webp" width="1823" height="863" loading="lazy" decoding="async" alt="Un reba&ntilde;o avanza hacia un pastor cuya sombra adopta forma de le&oacute;n, con la bas&iacute;lica de San Pedro al fondo.">
+    <figcaption class="capitulo-rotulo">
+      <span class="numero">Prefacio</span>
+      <h2>Met&aacute;foras</h2>
+    </figcaption>
+  </figure>
+  <article class="capitulo-texto fade">
+    <p class="capital">La Biblia tiene buenas met&aacute;foras, y luego est&aacute; la del buen pastor, que defiende a sus ovejas del lobo y otras alima&ntilde;as para entreg&aacute;rselas a la peor de todas, que las devora sin contemplaciones: nosotros. El escritor b&iacute;blico tendr&iacute;a un mal d&iacute;a, o una familia que alimentar. Es comprensible. Lo que cuesta m&aacute;s de entender es el &eacute;xito: veinte siglos de feligreses que se identifican con el reba&ntilde;o y de l&iacute;deres espirituales que aceptan, sin sonrojo, el papel de pastor. La oveja es miedosa y gregaria por naturaleza: hace lo que hacen las dem&aacute;s. Sin pensar. La historia registra despe&ntilde;amientos en masa: una salta al abismo y las otras la siguen, por turno, hasta la &uacute;ltima. Vamos, que encaja mucho m&aacute;s con la definici&oacute;n de una secta que con la de una religi&oacute;n mayoritaria. Y aun as&iacute;, lo m&aacute;s negro de la met&aacute;fora no es el reba&ntilde;o. Es que nadie pregunta nunca para qu&eacute; cr&iacute;a ovejas un pastor.</p>
+    <p>El primero de los buenos pastores tuvo nombre y buena punter&iacute;a: David, un zagal de Bel&eacute;n que se jugaba el pellejo contra el le&oacute;n y el oso por las ovejas de su padre. Funcion&oacute;: de pastor pas&oacute; a rey. Y ya como pastor de Israel le quit&oacute; a un soldado suyo la &uacute;nica oveja que ten&iacute;a; hizo falta un profeta y una par&aacute;bola de corderos para que se reconociera en la alima&ntilde;a. La carrera completa en un solo hombre.</p>
+    <p>Dos mil a&ntilde;os despu&eacute;s el oficio sigue vivo, y la Iglesia conserva una debilidad curiosa por bautizar a sus pastores con nombre de depredador: quince Leones lleva el escalaf&oacute;n. El decimoquinto era el pastor del reba&ntilde;o universal. Ha muerto, dicen.</p>
+    <a class="continuar" href="leer.html#capitulo-01">Continuar con el cap&iacute;tulo 1 &rarr;</a>
+  </article>
+</section>
+
+<section id="fragmento">
+  <div class="contenido fade" style="text-align:center">
+    <span class="etiqueta">Novela completa</span>
+    <h2>Los 47 capítulos, en un lector pensado para la historia</h2>
+    <p style="max-width:58ch;margin:1.4rem auto 2.4rem;color:var(--tinta-suave)">Lee el texto canónico de <em>El rebaño</em>, desde el prefacio hasta el desenlace, con índice por partes, progreso de lectura, modo nocturno y una cabecera artística propia para cada capítulo.</p>
+    <a class="btn" href="leer.html#prefacio">Abrir el lector completo</a>
+  </div>
+</section>
+
+<section id="prensa">
+  <div class="contenido fade" style="max-width:none">
+    <span class="etiqueta">Prensa y profesionales</span>
+    <h2>Dossier rápido</h2>
+    <div class="press-grid">
+      <dl class="press-facts">
+        <div><dt>Título</dt><dd><em>El rebaño</em></dd></div>
+        <div><dt>Serie</dt><dd><em>Las historias de TAU</em> · Libro I</dd></div>
+        <div><dt>Autor</dt><dd>Moisès Trullàs Parrot</dd></div>
+        <div><dt>Género</dt><dd>Thriller vaticano especulativo · novela de ideas</dd></div>
+        <div><dt>Marco</dt><dd>Roma y Europa, 2044</dd></div>
+        <div><dt>Estado</dt><dd>Manuscrito completo · 47 capítulos</dd></div>
+      </dl>
+      <div class="press-copy">
+        <h3>Una verdad que ya no admite réplica</h3>
+        <p>Cuando una entidad que se hace llamar Dios empieza a emitir verdades inapelables a través de la red TAU, una obispo del Vaticano y un cardenal que lleva dos meses escondido deben demostrar que el Papa sigue vivo, sin saber que el monstruo es el hombre más bueno que conoce, curado de su Alzheimer por una máquina que le devolvió las palabras y le quitó los frenos.</p>
+        <p>Esta sección reúne información verificable del proyecto. No incluye reseñas ni citas de prensa ficticias.</p>
+        <div class="press-actions">
+          <a class="btn" href="leer.html#prefacio">Leer la novela</a>
+          <a class="btn" href="mailto:mtrullasp@gmail.com?subject=Prensa%20%C2%B7%20El%20reba%C3%B1o">Contacto de prensa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="comparables">
+  <div class="contenido fade">
+    <span class="etiqueta">Para lectores de</span>
+    <div class="lista">
+      <span>C&oacute;nclave &mdash; Robert Harris</span>
+      <span>Klara y el Sol &mdash; Kazuo Ishiguro</span>
+      <span>M&aacute;quinas como yo &mdash; Ian McEwan</span>
+      <span>MANIAC &mdash; Benjam&iacute;n Labatut</span>
+    </div>
+  </div>
+</section>
+
+<section id="autor">
+  <div class="contenido fade">
+    <span class="etiqueta" style="display:block;text-align:center">El autor</span>
+    <p class="autor-nombre" style="text-align:center">Mois&egrave;s Trull&agrave;s Parrot</p>
+    <span class="autor-sub" style="text-align:center">Las historias de TAU &middot; Libro I</span>
+    <p><em>El reba&ntilde;o</em> abre <em>Las historias de TAU</em>: una serie sobre un mundo &mdash;el nuestro, dentro de nada&mdash; donde la verdad ya no se discute sino que se certifica, y sobre las personas que a&uacute;n se empe&ntilde;an en mirar a alguien a la cara y decidir si se f&iacute;an.</p>
+    <p>Thriller especulativo con alma de novela de ideas: la intriga de un secuestro imposible, la esgrima verbal de un c&oacute;nclave y una pregunta que no caduca &mdash;qu&eacute; hacemos cuando lo perfecto y lo verdadero dejan de ser lo mismo.</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="fade">
+    <hr class="regla">
+    <h2>El reba&ntilde;o est&aacute; en camino</h2>
+    <p>Si quieres recibir aviso del lanzamiento, leer m&aacute;s cap&iacute;tulos de muestra o ponerte en contacto con el autor, escribe aqu&iacute;:</p>
+    <a class="btn claro" href="mailto:mtrullasp@gmail.com?subject=Las%20historias%20de%20TAU%20%C2%B7%20El%20reba%C3%B1o">Escribir al autor</a>
+  </div>
+</section>
+
+<footer>
+  <p><span class="tau-min">τ</span> &nbsp; Las historias de TAU &middot; El reba&ntilde;o &nbsp;&mdash;&nbsp; &copy; 2026 Mois&egrave;s Trull&agrave;s Parrot &middot; Todos los derechos reservados</p>
+</footer>
+
+<script>
+// Nav: borde al hacer scroll
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
+
+// Aparición suave de secciones
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, {threshold: 0.12});
+document.querySelectorAll('.fade').forEach(el => io.observe(el));
+
+
+</script>
+</body>
+</html>

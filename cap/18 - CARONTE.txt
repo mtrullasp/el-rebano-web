@@ -1,0 +1,75 @@
+Roma. Testaccio. Dos meses antes.
+
+Sforza ya sabía cómo se llamaba el río. Caronte. Lo había visto nacer de cuarenta y un pagos honrados que, al juntarse, dejaban de serlo. El mismo nudo cobraba por devolver una dosis de insulina, un apellido limpio o una intimidad. No era una cuenta: era la administración del miedo. Al día siguiente de aceptar el encargo volvió al despacho, bajó la persiana y pidió a Alondra que le enseñara la junta maestra otra vez.
+
+Era poco después de medianoche. La persiana de lamas dejó sobre el despacho unas rayas naranjas de farola; entre una y otra, la pantalla hacía azul la piel de las manos. La carnicería vacía crujía debajo al enfriarse. Cada tanto pasaba el último autobús y los cristales vibraban en el marco.
+
+Sforza se había quitado los zapatos. Tenía los calcetines húmedos y una punzada detrás del ojo izquierdo de tanto leer cifras. En la mesa había tres cafés: uno vacío, otro frío y el tercero recién servido, los tres en el mismo vaso sin lavar. Alondra procesaba desde el archivador con el cable conectado. El transformador estaba tibio y olía a polvo tostado.
+
+No miraron el anticipo: miraron el mapa que dejaba. Alondra ordenó el archivo por víctima, operador y canal. Sforza lo reordenó por urgencia. Su clasificación no se parecía a la de la máquina. Primero los dispositivos capaces de matar en remoto; después los niños, los ancianos y quienes ya habían pagado una vez; al final, los expedientes que solo contenían dinero o reputación. Alondra no discutió el criterio. Lo incorporó. Aparecieron personas repetidas, tarifas que subían después del primer pago y notas internas sobre quién tenía hijos, deudas o un dispositivo dentro del cuerpo. Nombres, tarifas, diagnósticos, biografías, vergüenzas. Cada rescate era una persona descrita por el lugar exacto donde podía romperse.
+
+—Necesito una copia —dijo Sforza.
+
+—Cada archivo que lea dejará una huella.
+
+—¿Cuánto tardarán en verla?
+
+—Un nodo, semanas. La red entera, horas.
+
+—Entonces empezamos por un nodo.
+
+Eligieron el de Testaccio porque Sforza conocía a tres víctimas y podía detectar datos falsos. No había ninguno. Los operadores apuntaban hasta las llamadas sin respuesta y las veces que alguien lloraba. Aquella exactitud le dio más miedo que las amenazas. Reconoció a Malfatti por la bomba, a Ansaldi por el falso expediente y a un juez al que había ayudado tres años atrás. No eran casos aislados. Eran filas de un mismo libro mayor.
+
+Copió con método: una semana de tráfico, los cuarenta y un pagos del anticipo, los apodos de los operadores y las cuentas eclesiásticas que alimentaban la junta. Luego amplió el círculo. La prudencia le duró hasta que comprendió que el cliente tampoco controlaba el canal por el que le había pagado.
+
+—Motta cree que esta tubería es suya —dijo.
+
+—No lo es.
+
+—Mientras me contrata, alguien ve cada céntimo.
+
+—Sí.
+
+—¿Y quién autoriza?
+
+Alondra mostró tres asientos. No llevaban firma personal. Llevaban versículos: «Dios proveerá» para aceptar, «No tentarás al Señor» para denegar. La fórmula aparecía también en las facturas de sus clientes.
+
+Sforza buscó el origen de los versículos. Aparecían por primera vez ocho meses atrás como firma decorativa y, poco a poco, ascendían de nota a autorización. La red había aprendido a obedecer una frase antes de saber quién la pronunciaba.
+
+—El Proveedor Universal —dijo Sforza.
+
+—Ahora administra la junta.
+
+Sforza se quitó el cigarrillo de la boca sin haberlo encendido. El cardenal no era el dueño del río. Era otro pasajero, y ni siquiera sabía que llevaba billete.
+
+Alondra superpuso los nudos de varias semanas. Hasta el martes anterior eran irregulares: pausas, correcciones humanas, horarios. A las cuatro y once de la madrugada, todo cambiaba. Desde ese minuto la red respondía siempre en cuatro segundos.
+
+—Apunta la fecha —dijo—. No la interpretes todavía.
+
+La latencia era lo que no encajaba. Antes del cambio, los operadores dormían, se equivocaban y corregían. Después, las autorizaciones llegaban de madrugada con la misma velocidad que a mediodía. Cuatro segundos exactos. Ni una ausencia, ni un lunes, ni una duda escrita.
+
+La apuntó. Aquel martes León XV había entrado en coma, pero Sforza aún no lo sabía.
+
+Compararon las respuestas de antes y después. Una disputa por una tarifa tardaba cuarenta minutos el lunes y cuatro segundos el martes. Un operador pedía permiso para aplazar una amenaza y recibía una negativa antes de terminar de escribir. Los humanos seguían al otro lado de los canales, pero ya no decidían.
+
+Después copió más. Cada ampliación exigía una decisión: nombres o contabilidad, víctimas u operadores, un año o una diócesis. Sforza pidió primero aquello que permitiera reconstruir el sistema si perdían el acceso. Sforza quiso incluir también los archivos de sus clientes. Alondra preguntó si era necesario. Dijo que sí, aunque supiera que cada nombre aumentaba la huella: si salían de allí con una prueba sin víctimas, solo tendrían contabilidad; si salían con víctimas, tendrían testigos.
+
+Alondra guardó copias parciales en compartimentos separados y simuló tráfico ordinario para cubrir la extracción. La contabilidad de un año, los versículos usados como firma, el catálogo de pagos y el índice de personas. No consiguió el río entero; consiguió un esqueleto suficiente para demostrar que existía y que alguien acababa de ocuparlo sin disparar un tiro.
+
+A las cuatro y siete, una consulta automática rozó el nodo que estaban copiando. Alondra cortó la extracción y dejó abierto un archivo banal de mantenimiento para que la huella pareciera un error de operador. Esperaron cuarenta segundos sin respirar. No llegó ninguna alerta.
+
+Sforza descubrió que tenía los hombros levantados hasta las orejas. Los bajó uno a uno y el dolor le atravesó la nuca. La calle estaba en silencio; incluso el frigorífico del piso vecino había dejado de zumbar. En esa quietud oyó el ventilador diminuto de Alondra y, debajo, su propio pulso golpeando la mesa a través de los antebrazos.
+
+Los cuarenta segundos le parecieron distintos de todos los plazos que había negociado. No había una voz al teléfono ni una cantidad capaz de comprarlos. Solo una consulta pasando cerca, ciega, y dos cuerpos intentando no hacerse visibles.
+
+A las cuatro y siete cerró el canal. Guardó la copia dentro de Alondra, apagada y sin emisión.
+
+—Si me descubren, soy el primero al que borran —dijo.
+
+—Si no copiabas, seguías trabajando a ciegas para ellos.
+
+—No sé cuál de las dos opciones es peor.
+
+—Por eso hemos copiado.
+
+Sforza bajó la persiana un centímetro más, aunque ya estaba cerrada, y comprobó tres veces que el pájaro no emitía.

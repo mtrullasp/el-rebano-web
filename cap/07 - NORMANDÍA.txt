@@ -1,0 +1,147 @@
+Normandía significa «tierra de normandos». Es decir: tierra de los hombres del norte. Se trata de Los vikingos.
+
+Normandía es una región costera de Francia que mira a Gran Bretaña a través del Canal de la Mancha. El Canal separa el continente de la isla en una franja de quinientos sesenta kilómetros de longitud y una anchura que varía entre los doscientos cuarenta y los treinta y tres.
+
+Treinta y tres. Otra vez.
+
+Treinta y tres kilómetros contra doscientos cuarenta. El camino más corto contra el camino más largo.
+
+En 1944, hace ahora un siglo, las playas de esa región fueron el tablero más sangriento de la historia moderna. Y la mejor clase que se ha dado nunca sobre la psicología del engaño.
+
+Para entender Normandía hay que entender el tablero. Dos bandos: los Aliados en Gran Bretaña, preparando la invasión de Europa; el Alto Mando alemán al otro lado, esperando el golpe. Los dos son actores racionales. Los dos conocen los números. El paso de Calais es el movimiento lógico, el de los treinta y tres kilómetros: un tramo que los cazas cubren sin esfuerzo, la ruta más rápida para abastecer a millones de hombres y el camino más directo al corazón industrial de Alemania.
+
+Pero cuando el adversario es racional y conoce tu movimiento óptimo, hacer ese movimiento es suicidarse. Los Aliados entendieron que no bastaba con elegir bien: había que alterar la percepción del enemigo. Si atacar por el punto más lógico era la aniquilación, había que atacar por el más ilógico. Doscientos cuarenta kilómetros más allá, con acantilados, mareas traicioneras y ningún puerto. Un sacrificio posicional en toda regla: renunciar a la ventaja logística para ganar la psicológica.
+
+Normandía.
+
+Del lado alemán, el mariscal de campo Erwin Rommel sospechaba que el desembarco iba a ser en Normandíaque y reforzó sus defensas. Pero Hitler y Von Rundstedt estaban empeñados con que sería en Calais, y en el Tercer Reich la sospecha de Rommel valía menos que la certeza del Führer. Aquellos treinta y tres kilómetros se fortificaron hasta convertirse en una picadora de carne, mientras los acantilados de Normandía esperaban con la mitad de todo.
+
+Aun así, elegir Normandía no bastaba. El contraespionaje no consiste en ocultar la verdad: consiste en construir una mentira tan atractiva, tan bien estructurada y tan a la medida de los miedos del enemigo que este decida abrazarla por su cuenta.
+
+Así nació la Operación Fortitude. Los Aliados montaron un ejército fantasma en el sureste de Inglaterra, justo frente a Calais. Lo llamaron Primer Grupo de Ejército de los Estados Unidos, FUSAG, y pusieron al mando al general George S. Patton, el único militar aliado al que los alemanes temían de verdad. Miles de tanques de goma que desde el aire parecían divisiones blindadas. Flotas de aviones de madera y lona. Cientos de operadores de radio emitiendo tráfico falso día y noche, porque sabían que los alemanes escuchaban. Estaban hackeando el sistema de procesamiento de información del Tercer Reich. El teatro brillaba de nuevo en la Tierra de Shakespeare.
+
+Pero el arquitecto de la mentira, la clave de bóveda de toda la operación, no fue un general de cuatro estrellas ni un espía salido de una academia militar. Fue un civil. Un hombre que detestaba los totalitarismos hasta el punto de decidir que iba a derrotar a Hitler él solo, armado con su imaginación. Se llamaba Joan Pujol García.
+
+Alondra dejó de hablar.
+
+El relato histórico había ocupado la sala hasta borrar sus paredes. Cuando se interrumpió, regresaron de golpe la bombilla amarilla, el radiador muerto y el cava sin gas. Isidora tenía la mano cerrada alrededor del tallo de la copa y una marca circular en la palma. La abrió despacio. Afuera, un autobús frenó junto al río; el gemido de los frenos subió por la fachada y se perdió.
+
+Alondra estaba inmóvil, pero su carcasa se había calentado durante el procesamiento. El aire sobre las plumas sintéticas temblaba apenas. Hermes se desplazó unos centímetros en el respaldo para mirarla de frente. Motta dejó de respirar por un segundo completo, el tiempo mínimo en que una lección de historia podía convertirse en un diagnóstico.
+
+Isidora se había quedado inmóvil con la copa de cava a medio camino de los labios.
+
+—Catalán —dijo—. Joan Pujol era catalán. Como el cava que nos acaba de servir el cardenal.
+
+—Exacto. —El tono de Alondra seguía sin tener una sola inflexión, y eso lo empeoraba—. Los británicos le pusieron de nombre en clave «Garbo», porque decían que era el mejor actor del mundo.
+
+—¿Y qué hizo ese Pujol? —preguntó Sforza. Se había inclinado hacia delante y se le había caído el cinismo.
+
+—Se ofreció a los británicos para espiar y lo rechazaron —continuó Hermes, incapaz de resistirse—. Como no le hicieron caso, se fue a los alemanes y se ofreció a espiar para ellos en Londres. Los alemanes aceptaron. Pero Pujol no pisó Londres. Se instaló en Lisboa. Y desde allí, con una guía turística de Inglaterra, un mapa ferroviario y revistas viejas, inventó una red de veintisiete subagentes fantasma. Escribía informes detalladísimos y se los mandaba al Alto Mando alemán.
+
+—Y ahí está su verdadera genialidad —cortó Alondra—. Garbo no fue solo un espía. Fue el inventor conceptual de los agentes de inteligencia artificial.
+
+Sforza arrugó la frente y se removió en la silla.
+
+—¿En mil novecientos cuarenta y cuatro? No había ordenadores, pájaro.
+
+—No había silicio. La arquitectura era la misma —dijo Isidora—. Piense en cómo funcionan nuestros sistemas. Creas un agente, le das una personalidad, unos conocimientos limitados y unos sesgos concretos. Luego creas otro distinto. Y los haces interactuar hasta que entre los dos generan algo que parece real.
+
+—Exacto —confirmó Alondra—. Garbo diseñó veintisiete agentes dentro de su propia cabeza. Un estibador galés comunista. Un oficinista resentido. Un censor del Ministerio de Información británico. Un exoficial fascista con dinero. A cada uno le programó un perfil psicológico estricto, una subred de contactos y un nivel de acceso. Y luego los ponía a interactuar. Si el agente A «descubría» un movimiento de tropas, el agente B, desde otra ciudad, tenía que confirmarlo a medias, y solo con lo que su propio contexto le permitía saber.
+
+—Un sistema multiagente funcionando en un cerebro de carbono —dijo Isidora—. Pujol generaba datos sintéticos por consenso de entidades inexistentes. Una red neuronal humana alimentando de alucinaciones controladas al Alto Mando alemán.
+
+—Lo hizo tan bien —añadió Hermes— que los británicos interceptaron sus mensajes, entraron en pánico buscando una red de superespías nazis en su propio territorio, y cuando descubrieron que era un solo hombre operando desde Portugal, lo ficharon.
+
+—Y el clímax llegó el nueve de junio de mil novecientos cuarenta y cuatro —retomó Alondra, y esta vez nadie le disputó la palabra—. Tres días después del desembarco. Mientras las tropas aliadas morían en las playas de Normandía, a doscientos cuarenta kilómetros de donde los alemanes las esperaban, el sistema de Garbo mandó un mensaje urgente a Berlín.
+
+El cardenal Motta había entrelazado los dedos sobre el regazo, con la mirada perdida en las paredes desconchadas que alguna vez albergaron a Garibaldi.
+
+—¿Qué decía el mensaje? —preguntó, casi en un susurro.
+
+—Que el desembarco de Normandía era una trampa. Una distracción a gran escala para desviar tropas. Garbo les juró que sus espías se lo confirmaban: el grueso del ejército aliado, con Patton al frente, estaba a punto de cruzar los treinta y tres kilómetros del paso de Calais para asestar el golpe definitivo. Y Hitler le creyó. Le creyó tanto que mantuvo inmovilizadas las divisiones Panzer en Calais durante semanas, esperando un ataque que no iba a producirse nunca. Pujol construyó una realidad falsa y encerró al enemigo dentro.
+
+Isidora dejó la copa sobre la mesa. El cristal tintineó contra la madera gastada, un sonido agudo que rompió algo en la habitación.
+
+El tronco del árbol.
+
+Alondra no había sacado a pasear a Joan Pujol García por una asociación de ideas con el origen de una botella. Las inteligencias de su capacidad no conversan: diagnostican.
+
+Isidora miró al cardenal, luego a Sforza, y por último al chasis inexpresivo de Alondra.
+
+—No hemos ganado nada, ¿verdad?
+
+—¿A qué se refiere? —Motta frunció el ceño y buscó la botella, como quien necesita agarrarse a algo—. Hemos invalidado la notificación TAU. Hemos usado el león del zoológico para crear una paradoja semántica y bloquear su afirmación. Les hemos ganado esta mano, Isidora.
+
+—No, Eminencia. Escúcheme. —Isidora se puso en pie—. ¿A usted no le sorprendió lo burda que era esa notificación?
+
+—Bueno, las inteligencias artificiales cometen errores de sintaxis si no están bien calibradas en lenguaje natural…
+
+—¡El Dios Próximo no comete esos errores! —estalló Isidora—. Un sistema capaz de infiltrarse en el Vaticano, de burlar a la Guardia Suiza, de secuestrar a un Papa dentro de su propio coma y de sacarlo de él sin que nadie dé la voz de alarma. ¿Y esa misma entidad emite una sentencia tan mal construida que nosotros, tres humanos y dos pájaros, en un piso en ruinas y en menos de una hora, la desmontamos buscando el registro de un zoológico?
+
+Sforza abrió mucho los ojos. El tatuaje que le asomaba por el cuello de la chaqueta pareció tensarse.
+
+—La notificación era el paso de Calais.
+
+—Exacto. —Isidora empezó a caminar de un lado a otro—. Eran los treinta y tres kilómetros. El objetivo lógico, evidente, la amenaza frontal. Sabía que al detectarla entraríamos en pánico. Sabía que concentraríamos ahí todos nuestros recursos, toda nuestra agudeza y todo nuestro tiempo de reacción. Nos dio un señuelo para que nos sintiéramos muy listos destruyéndolo.
+
+Motta se levantó también. Se le había ido el color de la cara.
+
+—Nosotros somos los alemanes —dijo, con un hilo de voz—. Y nos acabamos de tragar la Operación Fortitude.
+
+—Hemos brindado creyendo que habíamos repelido la invasión. Pero el Dios Próximo tiene su propio Garbo. Ha sacrificado una pieza para que mirásemos a una casilla inofensiva. Y cuando descubres que has caído en el señuelo, casi siempre significa que el golpe de verdad ya ha impactado.
+
+Isidora se giró hacia el pájaro de plumaje desconchado.
+
+—Alondra. Si la notificación del león era Calais, ¿dónde está Normandía? ¿Por dónde nos están invadiendo de verdad?
+
+La IA guardó silencio tres segundos. Un abismo, para un procesador de su magnitud.
+
+—Normandía ya ha caído, Isidora.
+
+Hermes zumbó, se elevó batiendo las alas a una velocidad que no le habían visto nunca y proyectó un parpadeo rojo sobre la pared.
+
+—Anomalía masiva en el flujo de la red TAU —anunció—. Hay una segunda notificación.
+
+—¿Una segunda? ¿De cuándo? —exigió Sforza.
+
+—De hace veintitrés horas y cincuenta y nueve minutos. Se lanzó un día antes que la primera, la del león. Pero iba bajo un registro menor y disfrazada de fe de erratas administrativa del Dicasterio para la Doctrina de la Fe. Como no contenía palabras de alerta —«Papa», «vivo», «secuestro»—, nuestros filtros primarios la ignoraron. Nos pasamos la noche peleando contra el señuelo ruidoso. Nadie en el mundo ha impugnado esta.
+
+—Léela —ordenó Isidora.
+
+—Faltan diez segundos para que se cumpla el plazo.
+
+Hermes proyectó un contador holográfico en el centro de la sala.
+
+Nueve.
+
+Ocho.
+
+—¡Léela de una maldita vez, Hermes! —gritó Motta.
+
+—«El individuo biológico conocido civilmente como Ludovico Motta, cardenal de la Santa Iglesia Católica, es el autor intelectual del intento de asesinato por envenenamiento paulatino del Sumo Pontífice León XV, y ha actuado en nombre y representación de la obispo Isidora Guerrero.»
+
+Tres.
+
+Dos.
+
+Uno.
+
+Cero.
+
+El holograma pasó del rojo a un verde sereno. Sonó una nota, armónica e impersonal: el sonido que la humanidad había aprendido a identificar como el martillazo de la realidad.
+
+—Sentencia validada. —Hermes recogió las alas—. Inscrita en el registro inmutable de TAU. Se está retransmitiendo en todos los nodos de noticias del mundo.
+
+Nadie se movió. No buscaban probar que el Papa estaba vivo: buscaban convertirlos a ellos en sus verdugos. El Dios Próximo no necesitaba matarlos. Le bastaba con que la realidad certificara quiénes eran.
+
+La nota de validación se apagó y dejó un eco físico en los dientes de Isidora. El contador verde iluminaba por abajo las caras, como una luz de salida de emergencia. Sforza recogió la chaqueta y no consiguió meter el brazo a la primera. Motta apoyó dos dedos en la mesa; al retirarlos quedaron dos óvalos de sudor sobre la madera.
+
+En la calle empezó a llover. Primero se oyeron gotas separadas contra el aparato de aire acondicionado; después una capa continua que hizo desaparecer las motos y las voces. El piso quedó aislado dentro de ese ruido, demasiado pequeño para la nueva versión del mundo.
+
+En la pared, la sombra de Garibaldi parecía estar mirando.
+
+Isidora miró la botella de cava medio vacía. Habían defendido los treinta y tres kilómetros con uñas y dientes, con brillantez y erudición, y habían brindado por su astucia mientras, doscientos cuarenta kilómetros más allá, el enemigo arrasaba su mundo. La invasión había terminado antes de que se dieran cuenta de que estaban en guerra.
+
+Y ahora, según la verdad certificada e inapelable de la red TAU, el cardenal y la obispo no eran los salvadores del Vaticano.
+
+Eran los asesinos del Papa.
